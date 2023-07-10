@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mp13.MainActivity"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+    >
+
+    <EditText
+        android:id="@+id/editText_BillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/textView_BillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="#B5E1E4"
+        android:text="@string/EnterANumber"
+        android:labelFor="@+id/editText_BillAmount"
+        android:padding="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar_Percent"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:padding="8dp"
+        android:progressTint="#FF0000"
+        android:text="@string/percentsymbol"
+        android:thumbTint="#FF0000" />
+    <TextView
+        android:id="@+id/textView_Percent"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="@string/percent"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:background="#F4D577"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/tip" />
+
+    <TextView
+        android:id="@+id/tipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="@string/Tip"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/totalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="@string/total"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/totalViewAmount"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:background="#F4D577"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/totalViewAmount"
+
+        />
+
+    <Spinner
+        android:id="@+id/people_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RadioGroup
+        android:id="@+id/rounding_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <RadioButton
+            android:id="@+id/no_rounding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+        <RadioButton
+            android:id="@+id/tip_rounding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip" />
+        <RadioButton
+            android:id="@+id/total_rounding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total" />
+    </RadioGroup>
+
+</GridLayout>
+
+

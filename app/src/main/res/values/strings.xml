@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MP1.3</string>
+    <string name="textView_percent">textview percent</string>
+    <string name="textView_billAmountHint">bill amount hint\n</string>
+    <string name="billamount">billamount\n</string>
+    <string name="tipTextView">tip text view</string>
+    <string name="Bill_Amount">Bill Amount</string>
+    <string name="Tip">TIP</string>
+    <string name="EnterbillAmount">Enter Bill Amount</string>
+    <string name="percentsymbol">%</string>
+    <string name="percent">Percent</string>
+    <string name="EnterANumber">Enter a number</string>
+    <string name="total">Total</string>
+    <string name="totalViewAmount">$0.00</string>
+    <string name="tipAmount">$0.00</string>
+    <string name="tip">$0.00</string>
+
+    <string-array name="number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
